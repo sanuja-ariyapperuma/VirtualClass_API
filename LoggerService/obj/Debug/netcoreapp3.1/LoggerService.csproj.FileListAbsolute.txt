@@ -1,0 +1,14 @@
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\Contracts.dll
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csprojAssemblyReference.cache
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfoInputs.cache
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfo.cs
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.deps.json
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.dll
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.pdb
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\Contracts.pdb
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CopyComplete
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\Entities.dll
+E:\AnS\VirtualClass\API\VirtualClass\LoggerService\bin\Debug\netcoreapp3.1\Entities.pdb

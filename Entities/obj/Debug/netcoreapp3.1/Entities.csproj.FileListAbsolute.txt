@@ -1,0 +1,9 @@
+E:\AnS\VirtualClass\API\VirtualClass\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+E:\AnS\VirtualClass\API\VirtualClass\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+E:\AnS\VirtualClass\API\VirtualClass\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+E:\AnS\VirtualClass\API\VirtualClass\Entities\obj\Debug\netcoreapp3.1\Entities.csprojAssemblyReference.cache

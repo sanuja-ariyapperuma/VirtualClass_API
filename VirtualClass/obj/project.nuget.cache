@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZpCJnA+m+WmRkuwAszRDjmEerjLuMO6AqhmWJCibkWfrJK/AJ92pigFr/ysojpg2RCyAvHZuvXjpujD2x57jxQ==",
+  "dgSpecHash": "RKWje/u5buJKR3VfWirUYmjqCWG2IkU0mjwV42aEXZAgTj82Vz37TdC6sP0J4BhlQW+W+PTm2JT+T2Kzw3MRiA==",
   "success": true,
-  "projectFilePath": "S:\\AnS\\VirtualClass\\API\\VirtualClass\\VirtualClass\\VirtualClass.csproj",
+  "projectFilePath": "E:\\AnS\\VirtualClass\\API\\VirtualClass\\VirtualClass\\VirtualClass.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ARajm\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\ARajm\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
