@@ -58,7 +58,8 @@ namespace Virtual_Class_API.Controllers
         public IEnumerable<string> Get()
         {
             //var domesticAccounts = _repoWrapper.Account.FindByCondition(x => x.AccountType.Equals("Domestic"));
-            //var owners = _repoWrapper.Owner.FindAll();
+            
+            var owners = _repoWrapper.Owner.FindAll();
             return new string[] { "value1", "value2" };
         }
 

@@ -9,6 +9,7 @@ namespace Entities.Models
     [Table("owner")]
     public class Owner
     {
+        [Key]
         public Guid OwnerId { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
@@ -19,6 +20,6 @@ namespace Entities.Models
         [Required(ErrorMessage = "Address is required")]
         [StringLength(100, ErrorMessage = "Address cannot be longer than 100 characters")]
         public string Address { get; set; }
-        public ICollection<Account> Accounts { get; set; }
+        //public ICollection<Account> Accounts { get; set; }
     }
 }
