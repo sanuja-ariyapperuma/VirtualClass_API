@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
 using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +26,7 @@ namespace Virtual_Class_API.Controllers
             _repoWrapper = repoWrapper;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize]
         public IEnumerable<User> Get()
         {
             //var domesticAccounts = _repoWrapper.User.FindByCondition(x => x.AccountType.Equals("Domestic"));

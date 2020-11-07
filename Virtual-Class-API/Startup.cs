@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog;
 using Virtual_Class_API.Extensions;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Virtual_Class_API
 {
@@ -42,6 +43,16 @@ namespace Virtual_Class_API
 
             #endregion
 
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["Auth0:Authority"];
+                options.Audience = Configuration["Auth0:Audience"];
+            });
+
             services.AddControllers();
         }
 
@@ -69,6 +80,8 @@ namespace Virtual_Class_API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
