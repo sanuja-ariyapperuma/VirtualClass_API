@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Entities.Models
@@ -13,37 +15,34 @@ namespace Entities.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public Int64 UserId { get; set; }
 
         [StringLength(
-            50, 
+            100, 
             ErrorMessage = "First name can't be longer than 50 characters"
             )]
-        public String First_Name { get; set; }
+        public String FirstName { get; set; }
 
         [Required(ErrorMessage = "Last name is required")]
         [StringLength(
-            50, 
+            100, 
             ErrorMessage = "Last name can't be longer than 50 characters"
             )]
-        public String Last_Name { get; set; }
+        public String LastName { get; set; }
 
         [Required(ErrorMessage = "Email is required")]
         [StringLength(
-            100, 
+            200, 
             ErrorMessage = "Email can't be longer than 50 characters"
             )]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public String Email { get; set; }
 
-        public String Profile_Picture_URL { get; set; }
+        public String ProfilePictureURL { get; set; }
 
-
-        [StringLength(
-            10, 
-            MinimumLength = 10, 
-            ErrorMessage = "Telephone number must be a 10 digit number"
-            )]
-        public String Contact_Number { get; set; }
+        [Required]
+        public DateTime CreatedDate { get; set; }
+        public ICollection<ContactNumber> Numbers { get; set; }
 
     }
 }
