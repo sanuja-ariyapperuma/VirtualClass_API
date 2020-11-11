@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Virtual_Class_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -27,7 +27,7 @@ namespace Virtual_Class_API.Controllers
         }
 
         [HttpGet, Authorize]
-        public IEnumerable<User> Get()
+        public IEnumerable<User> GetInnitialData()
         {
             //var domesticAccounts = _repoWrapper.User.FindByCondition(x => x.AccountType.Equals("Domestic"));
             var users = _repoWrapper.User.FindAll().ToList();

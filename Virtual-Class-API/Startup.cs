@@ -51,6 +51,7 @@ namespace Virtual_Class_API
             {
                 options.Authority = Configuration["Auth0:Authority"];
                 options.Audience = Configuration["Auth0:Audience"];
+                options.RequireHttpsMetadata = false;
             });
 
             services.AddControllers();
@@ -79,9 +80,9 @@ namespace Virtual_Class_API
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.UseAuthentication();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
