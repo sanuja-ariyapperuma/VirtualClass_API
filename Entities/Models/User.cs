@@ -43,6 +43,8 @@ namespace Entities.Models
         [Required]
         public DateTime CreatedDate { get; set; }
         public ICollection<ContactNumber> Numbers { get; set; }
+        public ICollection<UserVirtualClass> UserVirtualClasses { get; set; }
+        public ICollection<Payment> Payments { get; set; }
 
     }
 }

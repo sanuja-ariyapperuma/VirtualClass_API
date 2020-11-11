@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities.Models
 {
     [Table("Ans_VC_SubjectCatogary")]
-    class SubjectCatogary
+    public class SubjectCatogary
     {
         [Key,Column(Order =1)]
         public long SubjectId { get; set; }

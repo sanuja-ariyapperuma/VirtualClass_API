@@ -12,5 +12,6 @@ namespace Entities.Models
         [StringLength(100, ErrorMessage = "Catogary name can't be longer than 100 characters")]
         public string CatogaryName { get; set; }
         public long ParentCatogaryId { get; set; }
+        public ICollection<SubjectCatogary> SubjectCatogaries { get; set; }
     }
 }

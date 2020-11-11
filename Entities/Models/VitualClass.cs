@@ -21,6 +21,10 @@ namespace Entities.Models
         public DateTime ClassRegularDate { get; set; }
         public DateTime ClassAlternativeDate { get; set; }
         public Subject Subject { get; set; }
+        public Package Package { get; set; }
+        public ICollection<UserVirtualClass> UserVirtualClasses { get; set; }
+        public ICollection<ClassChapter> ClassChapters { get; set; }
+        public ICollection<Payment> Payments { get; set; }
 
     }
 }
