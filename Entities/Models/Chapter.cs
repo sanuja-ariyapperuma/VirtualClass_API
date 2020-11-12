@@ -16,10 +16,9 @@ namespace Entities.Models
         [StringLength(100, ErrorMessage = "Chapter name can't be longer than 100 characters")]
         public string ChapterName { get; set; }
 
-        [ForeignKey(nameof(VitualClass))]
         public long VirtualClassId { get; set; }
         public ICollection<StudyMaterial> StudyMaterials { get; set; }
 
-        public VitualClass VitualClass_ { get; set; }
+        public VitualClass VitualClass { get; set; }
     }
 }

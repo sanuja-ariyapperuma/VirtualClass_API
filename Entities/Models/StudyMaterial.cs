@@ -22,14 +22,12 @@ namespace Entities.Models
         public string FilePath { get; set; }
         [Required]
         public DateTime UploadDate { get; set; }
-        [ForeignKey(nameof(VitualClass))]
         public long VirtualClassId { get; set; }
-        [ForeignKey(nameof(MaterialType))]
         public long MaterialTypeId { get; set; }
         [Required]
         public bool IsActive { get; set; }
-        public VitualClass VitualClass_ { get; set; }
-        public MaterialType MaterialType_ { get; set; }
+        public VitualClass VitualClass { get; set; }
+        public MaterialType MaterialType { get; set; }
         public Chapter Chapter { get; set; }
 
 

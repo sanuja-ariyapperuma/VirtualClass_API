@@ -12,15 +12,15 @@ namespace Entities.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long PaymentId { get; set; }
-        [StringLength(15, ErrorMessage = "PaymentReference can't be longer than 15 characters")]
+        [StringLength(10,MinimumLength = 10, ErrorMessage = "Payment reference should be exactly 10 characters")]
         public string PaymentReference { get; set; }
         public long UserId  { get; set; }
         public long VirtualClassId { get; set; }
-        public decimal Price { get; set; }
+        public decimal Amount { get; set; }
         public int Period { get; set; }
         public DateTime PaymentDate { get; set; }
         public User User { get; set; }
-        public UserVirtualClass UserVirtualClass { get; set; }
+        public VitualClass VirtualClass { get; set; }
 
 }
     

@@ -23,7 +23,7 @@ namespace Entities.Models
         public Subject Subject { get; set; }
         public Package Package { get; set; }
         public ICollection<UserVirtualClass> UserVirtualClasses { get; set; }
-        public ICollection<ClassChapter> ClassChapters { get; set; }
+        public ICollection<Chapter> Chapters { get; set; }
         public ICollection<Payment> Payments { get; set; }
         public ICollection<StudyMaterial> StudyMaterials { get; set; }
 
