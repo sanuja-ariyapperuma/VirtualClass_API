@@ -25,6 +25,7 @@ namespace Entities.Models
         public ICollection<UserVirtualClass> UserVirtualClasses { get; set; }
         public ICollection<ClassChapter> ClassChapters { get; set; }
         public ICollection<Payment> Payments { get; set; }
+        public ICollection<StudyMaterial> StudyMaterials { get; set; }
 
     }
 }

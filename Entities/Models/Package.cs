@@ -9,6 +9,8 @@ namespace Entities.Models
     [Table("Ans_VC_Package")]
     public class Package
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long PackageId { get; set; }
         [StringLength(100, ErrorMessage = "Package name can't be longer than 100 characters")]
         public string PackageName { get; set; }

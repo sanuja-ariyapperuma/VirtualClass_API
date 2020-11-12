@@ -9,6 +9,8 @@ namespace Entities.Models
     [Table("Ans_VC_Payment")]
     public class Payment
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long PaymentId { get; set; }
         [StringLength(15, ErrorMessage = "PaymentReference can't be longer than 15 characters")]
         public string PaymentReference { get; set; }

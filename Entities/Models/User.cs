@@ -15,20 +15,20 @@ namespace Entities.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Int64 UserId { get; set; }
+        public long UserId { get; set; }
 
         [StringLength(
             100, 
             ErrorMessage = "First name can't be longer than 50 characters"
             )]
-        public String FirstName { get; set; }
+        public string FirstName { get; set; }
 
         [Required(ErrorMessage = "Last name is required")]
         [StringLength(
             100, 
             ErrorMessage = "Last name can't be longer than 50 characters"
             )]
-        public String LastName { get; set; }
+        public string LastName { get; set; }
 
         [Required(ErrorMessage = "Email is required")]
         [StringLength(
@@ -36,9 +36,9 @@ namespace Entities.Models
             ErrorMessage = "Email can't be longer than 50 characters"
             )]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        public String Email { get; set; }
+        public string Email { get; set; }
 
-        public String ProfilePictureURL { get; set; }
+        public string ProfilePictureURL { get; set; }
 
         [Required]
         public DateTime CreatedDate { get; set; }
