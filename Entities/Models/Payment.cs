@@ -20,7 +20,7 @@ namespace Entities.Models
         public int Period { get; set; }
         public DateTime PaymentDate { get; set; }
         public User User { get; set; }
-        public VitualClass VirtualClass { get; set; }
+        public VirtualClass VirtualClass { get; set; }
 
 }
     

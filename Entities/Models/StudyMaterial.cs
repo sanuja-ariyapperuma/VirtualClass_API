@@ -26,7 +26,7 @@ namespace Entities.Models
         public long MaterialTypeId { get; set; }
         [Required]
         public bool IsActive { get; set; }
-        public VitualClass VitualClass { get; set; }
+        public VirtualClass VitualClass { get; set; }
         public MaterialType MaterialType { get; set; }
         public Chapter Chapter { get; set; }
 

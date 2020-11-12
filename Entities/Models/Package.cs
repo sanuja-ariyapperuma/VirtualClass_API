@@ -16,6 +16,6 @@ namespace Entities.Models
         public string PackageName { get; set; }
         public int Units { get; set; }
         public bool IsStorage { get; set; }
-        public ICollection<VitualClass> VitualClasses { get; set; }
+        public ICollection<VirtualClass> VitualClasses { get; set; }
     }
 }

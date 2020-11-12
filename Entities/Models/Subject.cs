@@ -15,6 +15,6 @@ namespace Entities.Models
         [StringLength(100, ErrorMessage = "Subject name can't be longer than 100 characters")]
         public string SubjectName { get; set; }
         public ICollection<SubjectCatogary> SubjectCatogaries { get; set; }
-        public ICollection<VitualClass> VitualClasses { get; set; }
+        public ICollection<VirtualClass> VitualClasses { get; set; }
     }
 }

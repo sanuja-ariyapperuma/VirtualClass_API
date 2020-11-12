@@ -19,6 +19,6 @@ namespace Entities.Models
         public long VirtualClassId { get; set; }
         public ICollection<StudyMaterial> StudyMaterials { get; set; }
 
-        public VitualClass VitualClass { get; set; }
+        public VirtualClass VitualClass { get; set; }
     }
 }

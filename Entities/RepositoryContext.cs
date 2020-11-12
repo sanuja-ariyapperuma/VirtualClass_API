@@ -26,7 +26,7 @@ namespace Entities
         public DbSet<Subject> Subject { get; set; }
         public DbSet<SubjectCatogary> SubjectCatogary { get; set; }
         public DbSet<UserVirtualClass> UserVirtualClass { get; set; }
-        public DbSet<VitualClass> VitualClass { get; set; }
+        public DbSet<VirtualClass> VitualClass { get; set; }
 
     }
 }

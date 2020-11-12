@@ -16,6 +16,6 @@ namespace Entities.Models
         public bool IsLecturer { get; set; }
         public bool IsActive { get; set; }
         public User User { get; set; }
-        public VitualClass VitualClass { get; set; }
+        public VirtualClass VitualClass { get; set; }
     }
 }
