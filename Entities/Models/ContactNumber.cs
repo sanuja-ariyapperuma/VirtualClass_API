@@ -9,13 +9,10 @@ namespace Entities.Models
     [Table("ans_vc_contactnumber")]
     public class ContactNumber
     {
-        [Key]
-        [Column(Order = 1)]
-        [ForeignKey(nameof(User))]
-        public Int64 UserId { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
+        [ForeignKey(nameof(User))]
+        public long UserId { get; set; }
+
         [StringLength(
             10,
             MinimumLength = 10,

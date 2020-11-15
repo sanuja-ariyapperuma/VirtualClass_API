@@ -7,6 +7,7 @@ using System.Text;
 
 namespace Entities.Models
 {
+    [Table("Ans_VC_StudyMaterial")]
     public class StudyMaterial
     {
         [Key]

@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Entities.Models
 {
+    [Table("Ans_VC_MaterialType")]
     public class MaterialType
     {
         [Key]

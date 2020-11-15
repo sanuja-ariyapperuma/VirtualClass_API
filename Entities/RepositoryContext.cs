@@ -12,7 +12,7 @@ namespace Entities
             :base(options)
         {
         }
-
+   
         public DbSet<Owner> Owners { get; set; }
         public DbSet<Account> Account { get; set; }
         public DbSet<User> Users { get; set; }
@@ -27,6 +27,19 @@ namespace Entities
         public DbSet<SubjectCatogary> SubjectCatogary { get; set; }
         public DbSet<UserVirtualClass> UserVirtualClass { get; set; }
         public DbSet<VirtualClass> VitualClass { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ContactNumber>()
+                .HasKey(c => new { c.UserId, c.Number });
+
+            modelBuilder.Entity<SubjectCatogary>()
+              .HasKey(c => new { c.SubjectId, c.CatogaryId });
+
+            modelBuilder.Entity<UserVirtualClass>()
+                .HasKey(c => new { c.UserId, c.VirtualClassId });
+        }
+
 
     }
 }
