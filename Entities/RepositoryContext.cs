@@ -28,8 +28,6 @@ namespace Entities
         public DbSet<UserVirtualClass> UserVirtualClass { get; set; }
         public DbSet<VirtualClass> VitualClass { get; set; }
 
-<<<<<<< Updated upstream
-=======
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ContactNumber>()
@@ -41,6 +39,5 @@ namespace Entities
             modelBuilder.Entity<UserVirtualClass>()
                 .HasKey(c => new { c.UserId, c.VirtualClassId });
         }
->>>>>>> Stashed changes
     }
 }
