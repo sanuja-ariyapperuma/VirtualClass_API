@@ -15,5 +15,6 @@ namespace Entities.Models
         public long CatogaryId { get; set; }
         public Subject Subject { get; set; }
         public Category Category { get; set; }
+
     }
 }

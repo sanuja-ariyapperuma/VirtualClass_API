@@ -28,5 +28,19 @@ namespace Entities
         public DbSet<UserVirtualClass> UserVirtualClass { get; set; }
         public DbSet<VirtualClass> VitualClass { get; set; }
 
+<<<<<<< Updated upstream
+=======
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ContactNumber>()
+                .HasKey(c => new { c.UserId, c.Number });
+
+            modelBuilder.Entity<SubjectCatogary>()
+              .HasKey(c => new { c.SubjectId, c.CatogaryId });
+
+            modelBuilder.Entity<UserVirtualClass>()
+                .HasKey(c => new { c.UserId, c.VirtualClassId });
+        }
+>>>>>>> Stashed changes
     }
 }
