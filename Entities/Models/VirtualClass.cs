@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace Entities.Models
 {
-    [Table("Ans_VC_User")]
+    [Table("Ans_VC_Class")]
     public class VirtualClass
     {
 

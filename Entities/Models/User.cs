@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Entities.Models
 {
-    [Table("ans_vc_users")]
+    [Table("Ans_VC_User")]
     public class User
     {
         
