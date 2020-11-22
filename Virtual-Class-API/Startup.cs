@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging;
 using NLog;
 using Virtual_Class_API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Virtual_Class_API
 {
@@ -52,7 +53,28 @@ namespace Virtual_Class_API
                 options.Authority = Configuration["Auth0:Authority"];
                 options.Audience = Configuration["Auth0:Audience"];
                 options.RequireHttpsMetadata = false;
+            }).AddOpenIdConnect("Auth0", options => {
+                // ...
+
+                // Configure the scope
+                options.ClientId = "x2AT4q9qI3gzgf0z5JJR18uudSqtZ3pw";
+                options.Authority = Configuration["Auth0:Authority"];
+                options.Scope.Clear();
+                options.Scope.Add("openid");
+                options.Scope.Add("profile");
+                options.Scope.Add("email");
+                options.Scope.Add("read:users");
+
+                // Set the correct name claim type
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    NameClaimType = "name"
+                };
+
+                //...
             });
+
+            services.AddHttpClient();
 
             services.AddControllers();
         }
